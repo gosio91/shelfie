@@ -16,7 +16,7 @@ class Dashboard extends React.Component {
 		this.getItemList()
 	}
 	getItemList() {
-		axios.get('/api/inventory').then((response) => {
+		axios.get('/api/products').then((response) => {
 			this.setState({ inventoryList: response.data });
 		});
 	}
